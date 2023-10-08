@@ -1,0 +1,2727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Daraz</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .Section1 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid; */
+        }
+
+        .topup {
+            height: 80px;
+            width: 1200px;
+            margin: auto;
+            background-image: url(./images/113f5b22-9a21-4378-b6d9-2b0bded25717.gif);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .navbar {
+            height: 25px;
+            width: 100%;
+            background-color: rgb(236, 236, 236);
+            display: flex;
+            justify-content: center;
+        }
+
+        .navlist {
+            width: 65%;
+            /* border: 1px solid red; */
+            margin-left: 100px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .smoa {
+            color: orangered;
+        }
+
+        .navul {
+            font-size: 13px;
+            font-weight: 450;
+            cursor: pointer;
+        }
+
+        .navul:hover {
+            text-decoration: underline;
+            color: orangered;
+        }
+
+        .whitediv {
+            height: max-content;
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+            /* border: 1px solid  red; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 40px;
+            width: 130px;
+            /* border: 1px solid green; */
+            background-image: url(./images/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .searchbar {
+            height: 45px;
+            width: 60%;
+            border: none;
+            background-color: rgb(245, 245, 245);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .searchicon {
+            height: 45px;
+            width: 7%;
+            background-color: rgb(245, 114, 36);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+        }
+
+        .sid {
+            opacity: 0.50;
+            font-weight: normal;
+            position: absolute;
+            left: 20px;
+        }
+
+        .mgfg {
+            color: white;
+        }
+
+        .cart {
+            font-size: 24px;
+        }
+
+        .spoffers {
+            height: 42px;
+            width: 200px;
+            border: none;
+            background-image: url(./images/7a379e2e-4b65-4617-9188-94e0c768cd9d.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cardslider {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .maincardslider {
+            height: 330px;
+            width: 1550px;
+            /* border: 1px solid green; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ads {
+            height: 330px;
+            width: auto;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .filterblock {
+            height: 330px;
+            width: 230px;
+            background-color: white;
+            border: 1px solid red;
+        }
+
+        .menu {
+            opacity: 0.70;
+            font-weight: normal;
+            line-height: 2;
+            cursor: pointer;
+            border: 1px solid;
+           
+        }
+
+        .menu:hover {
+
+            background-color: rgb(236, 236, 236);
+            color: rgb(0, 127, 100);
+        }
+
+        .adv1 {
+            height: 330px;
+            width: 1000px;
+            animation: fade 20s linear infinite;
+        }
+
+        @keyframes fade {
+            0% {
+                background-image: url(./images/f5d0993a-7bd0-4409-93be-75762bf540bd.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            16% {
+                background-image: url(./images/f5d0993a-7bd0-4409-93be-75762bf540bd.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            17% {
+                background-image: url(./fleximgs/5900a281-45b2-409a-9452-48bc7cf029b6.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            33% {
+                background-image: url(./fleximgs/5900a281-45b2-409a-9452-48bc7cf029b6.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            34% {
+                background-image: url(./fleximgs/b7299f80-d80b-402c-bac9-6b2c5ab85a4e.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            50% {
+                background-image: url(./fleximgs/b7299f80-d80b-402c-bac9-6b2c5ab85a4e.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            51% {
+                background-image: url(./fleximgs/dbf204e2-40af-4326-aa56-141b337a9e6a.jpg);
+                background-position: center;
+                background-size: cover;
+
+            }
+
+            68% {
+                background-image: url(./fleximgs/dbf204e2-40af-4326-aa56-141b337a9e6a.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            69% {
+                background-image: url(./fleximgs/dda16486-4e8a-40d5-8d7d-23903f86d588.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            86% {
+                background-image: url(./fleximgs/dda16486-4e8a-40d5-8d7d-23903f86d588.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            87% {
+                background-image: url(./fleximgs/8a116e5a-6cc3-46f3-9c32-9f996a7d2ae4.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            100% {
+                background-image: url(./fleximgs/8a116e5a-6cc3-46f3-9c32-9f996a7d2ae4.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .adv2 {
+            height: 330px;
+            width: 1000px;
+            animation: fade 20s linear infinite;
+        }
+
+        .adv3 {
+            height: 330px;
+            width: 1000px;
+            animation: fade 20s linear infinite;
+        }
+
+        .adv4 {
+            height: 330px;
+            width: 1000px;
+            animation: fade 20s linear infinite;
+        }
+
+        .adv5 {
+            height: 330px;
+            width: 1000px;
+            animation: fade 20s linear infinite;
+
+        }
+
+        .adv6 {
+            height: 330px;
+            width: 1000px;
+            animation: fade 20s linear infinite;
+        }
+
+        .Section2 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid; */
+            background-color: rgb(245, 245, 245);
+            display: flex;
+            justify-content: center;
+        }
+
+        .parent2 {
+            height: max-content;
+            width: 84%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .countdowncard {
+            height: 400px;
+            width: 100%;
+            background-image: url(./ctgry/851cef4b-8190-407e-9f8b-258a9ede33b3.gif);
+            background-position: top;
+            background-size: cover;
+            border: 1px solid firebrick;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .mainctgry {
+            height: 40px;
+            width: 19%;
+            border: none;
+            background-color: white;
+            border-radius: 22px;
+            padding-top: 6px;
+            display: flex;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .mainctgry:hover {
+            box-shadow: 0px 8px 19px -5px rgba(0, 0, 0, 0.75);
+
+        }
+
+        .hovergr:hover {
+            color: rgb(52, 201, 89);
+            font-weight: bold;
+        }
+
+        .crimg {
+            height: 30px;
+            width: 30px;
+            background-image: url(./ctgry/97617795-0b7e-4989-a4e8-f76497e1290c.png);
+            background-position: center;
+            background-size: cover;
+            margin-left: 5px;
+
+        }
+
+        .mart {
+            font-weight: normal;
+            padding-top: 2px;
+            margin-left: 10px;
+        }
+
+        .crimg2 {
+            height: 30px;
+            width: 30px;
+            background-image: url(./ctgry/dbf326fa-28cf-415c-9216-2c818d490dbd.png);
+            background-position: center;
+            background-size: cover;
+            margin-left: 5px;
+        }
+
+        .hoverylw:hover {
+            color: rgb(199, 199, 46);
+            font-weight: bold;
+        }
+
+        .crimg3 {
+            height: 30px;
+            width: 30px;
+            background-image: url(./ctgry/24c7f491-9af8-4309-b334-9bab23f0f0b3.png);
+            background-position: center;
+            background-size: cover;
+            margin-left: 5px;
+        }
+
+        .crimg4 {
+            height: 30px;
+            width: 30px;
+            background-image: url(./ctgry/d7f306b2-df5d-4e4d-9b7f-fdc33c926962.png);
+            background-position: center;
+            background-size: cover;
+            margin-left: 5px;
+        }
+
+        .crimg5 {
+            height: 30px;
+            width: 30px;
+            background-image: url(./ctgry/a0f9b900-d1bc-4072-823a-46e19cd482a4.png);
+            background-position: center;
+            background-size: cover;
+            margin-left: 5px;
+
+        }
+
+        .flashsale {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid firebrick; */
+        }
+
+        .fshdng {
+            opacity: 0.60;
+            margin-top: 40px;
+            font-weight: normal;
+        }
+
+        .onsale {
+            height: 54vh;
+            width: 100%;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        .topbar {
+            height: 10vh;
+            width: 100%;
+            border-bottom: 2px solid rgb(213, 213, 213);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .osn {
+            color: orangered;
+            font-weight: normal;
+            margin-left: 20px;
+        }
+
+        .endsale {
+            height: max-content;
+            width: 20%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 600px;
+        }
+
+        .ending {
+            font-weight: normal;
+        }
+
+        .colons {
+            color: rgb(255, 104, 1);
+        }
+
+        .orngbox {
+            height: 40px;
+            width: 40px;
+            border-radius: 3px;
+            background-color: rgb(255, 104, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .shop {
+            height: 40px;
+            width: 120px;
+            background-color: white;
+            border: 1px solid rgb(255, 104, 1);
+            color: rgb(255, 104, 1);
+            margin-right: 20px;
+        }
+
+        .prolane1 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .saledeals {
+            height: 40vh;
+            width: 16%;
+            /* border: 1px solid red; */
+            cursor: pointer;
+        }
+
+        .saledeals:hover {
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .imgp {
+            height: 180px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/9912a32083db0ab310565c00d385f2ff.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .textbox {
+            height: max-content;
+            width: 80%;
+            margin-left: 5px;
+            /* border: 1px solid green; */
+        }
+
+        .desc {
+            font-weight: normal;
+        }
+
+        .price {
+            color: rgb(255, 104, 1);
+            font-weight: normal;
+
+        }
+
+        .disprice {
+            margin-top: 5px;
+            font-weight: normal;
+        }
+
+        .dispro {
+            text-decoration: line-through;
+            opacity: 0.40;
+        }
+
+        .imgp2 {
+            height: 180px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/a76b10fc73f1e3f05c31de35044fd1ea.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgp3 {
+            height: 180px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/d6bdf7f9523c1639a35c49e847d2a6b6.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgp4 {
+            height: 180px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/e29efb8a47463ec949df337e70666350.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgp5 {
+            height: 180px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/48493eb287b298756b86a0556db05bc7.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgp6 {
+            height: 180px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/a605d686916ac2384b4a7ae5951a1d1d.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .flashsale2 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid firebrick; */
+        }
+
+        .darazmall {
+            font-weight: normal;
+            margin-top: 20px;
+        }
+
+        .floor2 {
+            height: 40vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .saledeals2 {
+            height: 38vh;
+            width: 16%;
+            /* border: 1px solid red; */
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+
+        }
+
+        .saledeals2:hover {
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .imgdm {
+            height: 200px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/f1eec62efa53b8cb9c6751c2bcd935f6.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px -11px 22px -11px rgba(0, 0, 0, 0.32) inset;
+        }
+
+        .maindmlogo {
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            box-shadow: 1px 1px 28px -11px rgba(0, 0, 0, 0.43);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -30px;
+            margin-left: 60px;
+            background-color: white;
+        }
+
+        .dmlogo {
+            height: 50px;
+            width: 50px;
+            border: 1px solid greenyellow;
+            background-image: url(./ctgry/saleitems/67eb5f0fb1192554fcec47ffd8b3020b.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .textbox2 {
+            height: max-content;
+            width: 95%;
+            /* border: 1px solid green; */
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .furdes {
+            font-weight: normal;
+            opacity: 0.50;
+        }
+
+        .imgdm2 {
+            height: 200px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/e1f1c1f85a03f7f709b1711fc190fa82.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px -11px 22px -11px rgba(0, 0, 0, 0.32) inset;
+        }
+
+        .dmlogo2 {
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid greenyellow; */
+            background-image: url(./ctgry/saleitems/f63957e5fd059166b5658b7720097313.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgdm3 {
+            height: 200px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/8aa002cc1a4b8d17e3644f1f444bb01a.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px -11px 22px -11px rgba(0, 0, 0, 0.32) inset;
+        }
+
+        .dmlogo3 {
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid greenyellow; */
+            background-image: url(./ctgry/saleitems/22b9c317bcf040a95601aa0b1bfe1d2e.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgdm4 {
+            height: 200px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/ee74bea0828dc49cd189e9aec2757ff5.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px -11px 22px -11px rgba(0, 0, 0, 0.32) inset;
+        }
+
+        .dmlogo4 {
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid greenyellow; */
+            background-image: url(./ctgry/saleitems/ebc0513bfbad519ce3edb1f6ae4dcdff.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgdm5 {
+            height: 200px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/cad1e0c93882a302496c0d4ce993761b.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px -11px 22px -11px rgba(0, 0, 0, 0.32) inset;
+        }
+
+        .dmlogo5 {
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid greenyellow; */
+            background-image: url(./ctgry/saleitems/a59560714683f7704fa858d0dfd473a3.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .imgdm6 {
+            height: 200px;
+            width: auto;
+            background-image: url(./ctgry/saleitems/f1ca00ae45f4f9f4deaf94fd792b4260.jpg);
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px -11px 22px -11px rgba(0, 0, 0, 0.32) inset;
+        }
+
+        .dmlogo6 {
+            height: 50px;
+            width: 50px;
+            /* border: 1px solid greenyellow; */
+            background-image: url(./ctgry/saleitems/ef89b898e560dacc23760bc31b3cee6e.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .categoryfloor {
+            height: 47vh;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .whitebackground {
+            height: 36vh;
+            width: 100%;
+            background-color: white;
+            margin-top: 20px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .block1 {
+            height: 126px;
+            width: 156px;
+            border: 1px solid rgb(226, 226, 226);
+            margin-top: -5px;
+        }
+
+        .btop {
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .bbtm {
+            border-bottom: none;
+        }
+
+        .bright {
+            border-right: none;
+        }
+
+        .bleft {
+            border-left: none;
+        }
+
+        .ctg {
+            height: 125px;
+            width: 155px;
+            /* border: 1px solid blue; */
+            transition: 0.34s;
+            cursor: pointer;
+        }
+
+        .ctg:hover {
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+            border: none;
+        }
+
+        .airbuds {
+            height: 90px;
+            width: 130px;
+            background-image: url(./ctgry/4c7ecbb45e1ea45f978e1c146f1acdac.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .earbuds {
+            font-weight: normal;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .theater {
+            height: 90px;
+            width: 110px;
+            background-image: url(./ctgry/c50d1a604995c138ad00737959f43175.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .condoms {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/3e3a4343f6e27e296512be0018342ae2.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .eyeshadow {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/226ed877a3dd7d6108a6533c9279a123.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .bag {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/feb28076e5b201257f74cf50e1c57ac1.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .sandals {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/44c2417c3a1fa2cd82b72a61612dea5b.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .clothing {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/420e5186738e45a88f4d6b68abd5d584.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .earrings {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/24e2b618fb0129fb742a29b3f522a866.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .bras {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/6351946952086623c8e4e89c868cc072.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .brain {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/ec26e739607e78f643f0f58b812a62a3.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .sketch {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/9cec33be9b8506f60af68fc6f8689d2f.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .cleaners {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/8ca858251da244ddb2f0a26b3ff80b80.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .rings {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/9a3440e386444e49ca41ef89f7e625ee.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .lighting {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/66fe2ceb70d29183396fd1f12d855f0d.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .bookcases {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/46f90d88aac5ddd5803ffc9615e5f8f5.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .stickers {
+            height: 90px;
+            width: 90px;
+            background-image: url(./ctgry/5ae9b923fd035e5a1e9cd382944b44c6.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+
+        .foryou {
+            height: max-content;
+            width: 100%;
+            border: 1px solid red;
+            margin-top: 20px;
+        }
+
+        .foryouprod {
+            height: max-content;
+            width: 100%;
+            border: 1px solid greenyellow;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .shopprod {
+            height: 47vh;
+            width: 16%;
+            /* border: 1px solid blue; */
+            background-color: white;
+            margin-left: 8px;
+            margin-top: 19px;
+            cursor: pointer;
+        }
+
+        .shopprod:hover {
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+            border: none;
+        }
+
+        .productimage {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/956130eff4f099420cab396b866eca2c.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .textdiv {
+            height: 115px;
+            width: 90%;
+            /* border: 1px solid firebrick; */
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .star {
+            font-size: 12px;
+            margin-left: -2px;
+            color: rgb(250, 202, 81);
+        }
+
+        .productimage2 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/f4d025aa87e5c65262aeb99fdff04c58.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage3 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/S81b93aa1bd2c46d29f07498ced81ee0a1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage4 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/d1943f70896d44b63b1f4b7ef07d4167.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage5 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/fb955cea7767d799dc29556b048182f1.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage6 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/3d3153550e6d6efaab966fd51b01cb15.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .greystar {
+            color: rgb(218, 218, 218);
+        }
+
+        .productimage7 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/68707009815289e65b1ea5ab0bc2baae.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage8 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/4487607f29934fee9d38d93f584e2601.png_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage9 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/6b64017489bfb40af63bff89d08a3a63.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage10 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/8939c69dbef457dd2aa8cbf23348b9ff.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage11 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/6a24982a1b19b003b9e73fc3ac072681.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage12 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/9b51591d2866fae2f0d99b12647ad730.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage13 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/305cd47c2982f08183b7b357027f52ab.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage14 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/e3307c39c6d88a71e6a68edb5611282f.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage15 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/8522c6f7a850f77fc83d39cdcb0d23d4.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage16 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/36832f15f5874de97a4db655c1706db4.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage17 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/875dacb4f718672d5ae40389e4ac3375.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage18 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/c67bb2c8176f57badc723332af7c4103.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage19 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/29fbfc608385509588f59b6989df2791.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage20 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/f1a4b75293b71c159a16fb204b4e0082.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage21 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/989240bc3d61755b2285f5fba430c983.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage22 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/50002e4f04e6558f517703e23836f5af.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage23 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/3aed71b646b9ba6b26357a170bf999ee.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .productimage24 {
+            height: 200px;
+            width: auto;
+            background-image: url(./images/b23f7e5f18c3fd41fd4e0f5f6afe4c38.jpg_400x400q75-product.jpg_.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .loadmore {
+            height: 50px;
+            width: 400px;
+            border: 2px solid rgb(255, 104, 1);
+            margin-top: 20px;
+            color: rgb(255, 104, 1);
+            margin-left: 30%;
+            font-size: 16px;
+        }
+
+        .customcare {
+            height: 48vh;
+            width: 100%;
+            background-color: rgb(46, 46, 84);
+            border-top: 30px solid rgb(245, 245, 245);
+            display: flex;
+            justify-content: center;
+        }
+
+        .leftlane {
+            height: 40vh;
+            width: 30%;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .csare {
+            height: max-content;
+            width: 40%;
+            /* border: 1px solid green; */
+        }
+
+        .helpcenter {
+            font-weight: normal;
+            color: white;
+        }
+
+        .marg {
+            margin-top: 7px;
+        }
+        .makemoney {
+            height: max-content;
+            width: 40%;
+            /* border: 1px solid green; */
+            margin-top: 40px;
+        }
+        .daraz{
+            height: max-content;
+            width: 40%;
+            /* border: 1px solid green; */
+            margin-top: 30px;
+        }
+        .rightlane {
+            height: 40vh;
+            width: 40%;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .scanners{
+            height: 190px;
+            width: 70%;
+            /* border: 1px solid green; */
+        }
+        .topscan{
+            height: 110px;
+            width: 240px;
+            /* border: 1px solid green; */
+        }
+        .scanimg{
+            height: 100px;
+            width: 100px;
+            background-image: url(./fleximgs/TB18aqePBLoK1RjSZFuXXXn0XXa.png);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 1282px) {
+            .maincardslider {
+                justify-content: left;
+            }
+
+            .countdowncard {
+                height: 400px;
+            }
+
+            .flashsale {
+                height: 65vh;
+            }
+
+            .categoryfloor {
+                height: 80vh;
+            }
+
+            .whitebackground {
+                height: max-content;
+                justify-content: center;
+            }
+
+            .foryou {
+                margin-top: -100px;
+                height: 320vh;
+            }
+
+            .block1 {
+                width: 15%;
+                border: none;
+            }
+
+            .foryouprod {
+                justify-content: center;
+            }
+
+            .shopprod {
+                width: 22%;
+            }
+
+
+        }
+
+        @media screen and (max-width: 1025px) {
+            .topup {
+                width: 1000px;
+                height: 50px;
+            }
+
+            .navbar {
+                justify-content: flex-start;
+
+            }
+
+            .parent2 {
+                width: 100%;
+            }
+
+            .mart {
+                font-size: 15px;
+            }
+
+            .navlist {
+                width: 80%;
+            }
+
+            .maincardslider {
+                justify-content: left;
+            }
+
+            .flashsale2 {
+                margin-top: 40px;
+            }
+
+            .categoryfloor {
+                margin-top: 40px;
+            }
+
+            .foryou {
+                margin-top: 100px;
+                height: max-content;
+            }
+
+            .shopprod {
+                height: max-content;
+                width: 23%;
+            }
+
+        }
+
+        @media screen and (max-width: 913px) {
+            .topup {
+                width: 900px;
+                height: 50px;
+            }
+
+            .navbar {
+                justify-content: flex-start;
+            }
+
+            .navlist {
+                width: 85%;
+            }
+
+            .parent2 {
+                height: 110vh;
+            }
+
+            .mart {
+                font-size: 14px;
+            }
+
+            .saledeals {
+                height: max-content;
+            }
+
+            .flashsale {
+                margin-top: -20px;
+            }
+
+            .floor2 {
+                height: max-content
+            }
+
+            .flashsale2 {
+                margin-top: -300px;
+
+            }
+
+            .saledeals2 {
+                height: max-content;
+            }
+
+            .categoryfloor {
+                height: 90vh;
+            }
+
+            .foryou {
+                margin-top: -700px;
+                height: 210vh;
+            }
+
+
+        }
+
+        @media screen and (max-width: 821px) {
+            .topup {
+                width: 500px;
+                height: 30px;
+            }
+
+            .navlist {
+                margin-left: 10px;
+                width: 90%;
+            }
+
+            .navul {
+                font-size: 9px;
+            }
+
+            .countdowncard {
+                height: 330px;
+            }
+
+            .mart {
+                font-size: 13px;
+            }
+
+            .shop {
+                margin-left: -80px;
+            }
+
+            .saledeals {
+                height: max-content;
+            }
+
+            .flashsale {
+                margin-top: -20px;
+            }
+
+            .floor2 {
+                height: max-content;
+            }
+
+            .flashsale2 {
+                margin-top: -270px;
+
+            }
+
+            .saledeals2 {
+                height: max-content;
+            }
+
+            .categoryfloor {
+                height: 96vh;
+            }
+
+            .block1 {
+                width: 25%;
+            }
+
+            .foryou {
+                margin-top: -500px;
+                height: 270vh;
+            }
+
+            .shopprod {
+                height: 35vh;
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            .topup {
+                width: 500px;
+                height: 30px;
+            }
+
+            .navlist {
+                margin-left: 10px;
+                width: 90%;
+            }
+
+            .navul {
+                font-size: 9px;
+            }
+
+            .countdowncard {
+                height: 330px;
+            }
+
+            .mart {
+                font-size: 12px;
+            }
+
+            .shop {
+                margin-left: -160px;
+            }
+
+            .parent2 {
+                height: 180vh;
+            }
+
+            .endsale {
+                margin-left: 30px;
+            }
+
+            .flashsale {
+                margin-top: 10px;
+            }
+
+            .prolane1 {
+                flex-wrap: wrap;
+            }
+
+            .saledeals {
+                width: 30%;
+            }
+
+            .flashsale2 {
+                margin-top: 90px;
+                height: 80vh;
+            }
+
+            .floor2 {
+                flex-wrap: wrap;
+            }
+
+            .saledeals2 {
+                width: 30%;
+            }
+
+            .categoryfloor {
+                margin-top: -200px;
+            }
+
+            .block1 {
+                width: 25%;
+            }
+
+            .foryou {
+                margin-top: -400px;
+                height: 270vh;
+            }
+
+            .shopprod {
+                height: 35vh;
+            }
+        }
+
+        @media screen and (max-width: 541px) {
+
+            .topup {
+                width: 550px;
+                height: 30px;
+            }
+
+            .navlist {
+                margin-left: 10px;
+                width: 100%;
+            }
+
+            .navul {
+                margin-left: 20px;
+                font-size: 8px;
+            }
+
+            .ads {
+                visibility: hidden
+            }
+
+            .filterblock {
+                width: 100%;
+                visibility: visible;
+                text-align: center;
+                margin-left: -40px;
+            }
+
+            .spoffers {
+                display: none;
+            }
+
+            .countdowncard {
+                height: 240px;
+            }
+
+            .parent2 {
+                width: 100%;
+            }
+
+            .mart {
+                font-size: 12px;
+            }
+
+            .prolane1 {
+                flex-wrap: wrap;
+            }
+
+            .saledeals {
+                width: 30%;
+            }
+
+            .flashsale {
+                margin-top: 10px;
+            }
+
+            .flashsale2 {
+                margin-top: 300px;
+                height: 100vh;
+            }
+
+            .floor2 {
+                flex-wrap: wrap;
+            }
+
+            .saledeals2 {
+                width: 30%;
+            }
+
+            .categoryfloor {
+                margin-top: -70px;
+                height: 180vh;
+            }
+
+            .block1 {
+                width: 25%;
+            }
+
+            .shop {
+                margin-left: -400px;
+            }
+
+            .foryou {
+                height: 350vh;
+            }
+
+            .shopprod {
+                height: max-content;
+                margin-top: 60px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 413px) {
+            .foryou {
+                margin-top: -700px;
+                height: 600vh;
+            }
+        }
+
+        @media screen and (max-width: 415px) {
+
+            .topup {
+                width: 400px;
+                height: 20px;
+            }
+
+            .navbar {
+                height: 40px;
+            }
+
+            .navlist {
+                margin-left: 10px;
+            }
+
+            .navul {
+                margin-left: 20px;
+                font-size: 8px;
+            }
+
+            .ads {
+                visibility: hidden
+            }
+
+            .filterblock {
+                width: 30%;
+                visibility: visible;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: -200px;
+            }
+            .menu{
+                width: max-content;
+           
+            }
+
+            .spoffers {
+                display: none;
+            }
+
+            .parent2 {
+                width: 100%;
+                height: max-content;
+            }
+
+            .countdowncard {
+                height: 190px;
+            }
+
+            .mainctgry {
+                flex-wrap: wrap;
+            }
+
+            .prolane1 {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .shop {
+                margin-left: -600px;
+            }
+
+            .saledeals {
+                width: 45%;
+            }
+
+            .flashsale {
+                flex-wrap: wrap;
+                height: 80vh;
+                margin-top: 10px;
+            }
+
+            .flashsale2 {
+                height: 130vh;
+            }
+
+            .floor2 {
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .saledeals2 {
+                width: 40%;
+                height: max-content;
+                margin-top: 10px;
+            }
+
+            .categoryfloor {
+                margin-top: -300px;
+                height: 200vh;
+            }
+
+            .block1 {
+                width: 50%;
+            }
+
+            .foryou {
+                height: 600vh;
+                margin-top: -700px;
+            }
+
+            .shopprod {
+                width: 48%;
+                height: 40vh;
+            }
+
+        }
+
+        @media screen and (max-width: 394px) {
+            .flashsale2 {
+                margin-top: 360px;
+            }
+
+            .categoryfloor {
+                margin-top: -200px;
+            }
+
+            .foryou {
+                margin-top: -600px;
+                height: 1125vh;
+            }
+
+            .shopprod {
+                width: 90%;
+                height: max-content;
+            }
+        }
+
+
+        @media screen and (max-width: 376px) {
+            .topup {
+                width: 360px;
+                height: 30px;
+            }
+
+            .whitediv {
+                width: auto;
+            }
+/* 
+            .filterblock {
+                margin-left: -360px;
+            } */
+
+            .ads {
+                width: 1500px;
+            }
+
+            .flashsale2 {
+                height: 140vh;
+                margin-top: 460px;
+            }
+        }
+
+        @media screen and (max-width: 362px) {
+            .topup {
+                width: 360px;
+                height: 30px;
+            }
+
+            .whitediv {
+                width: auto;
+            }
+
+            /* .filterblock {
+                margin-left: -360px;
+            } */
+
+            .ads {
+                width: 1500px;
+            }
+
+            .flashsale2 {
+                margin-top: 400px;
+                height: 140vh;
+            }
+
+            .categoryfloor {
+                margin-top: 10px;
+            }
+
+            .foryou {
+                margin-top: -400px;
+                height: 1270vh;
+            }
+
+            .shopprod {
+                width: 90%;
+                height: max-content;
+            }
+
+        }
+
+        @media screen and (max-width: 281px) {
+
+            .topup {
+                width: 250px;
+                height: 20px;
+            }
+
+            .navbar {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .ads {
+                visibility: hidden
+            }
+
+            .filterblock {
+                width: 100%;
+                visibility: visible;
+
+            }
+
+            .whitediv {
+                width: auto;
+                justify-content: flex-start;
+            }
+
+            .searchbar {
+                display: none;
+            }
+
+            .mgfg {
+                visibility: visible;
+            }
+
+            .spoffers {
+                display: none;
+            }
+
+            .cart {
+                display: none;
+            }
+
+            .countdowncard {
+                height: 130px;
+            }
+
+            .mainctgry {
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .mart {
+                font-size: 10px;
+            }
+
+            .ending {
+                display: none;
+            }
+
+            .saledeals {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .flashsale2 {
+                margin-top: 1400px;
+            }
+
+            .saledeals2 {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .categoryfloor {
+                margin-top: 860px;
+                justify-content: space-around;
+            }
+
+            .foryou {
+                margin-top: 400px;
+                height: max-content;
+            }
+
+            .shopprod {
+                width: 90%;
+                height: max-content;
+            }
+
+            .foryou {
+                margin-top: -220px;
+            }
+
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="Section1">
+        <div class="topup"></div>
+        <div class="navbar">
+            <ul class="navlist">
+                <li class="navul smoa">SAVE MORE ON APP</li>
+                <li class="navul">DARAZ AFFILIATE PROGRAM</li>
+                <li class="navul">SELL ON DARAZ</li>
+                <li class="navul">CUSTOMER CARE</li>
+                <li class="navul">TRACK MY ORDER</li>
+                <li class="navul">LOGIN</li>
+                <li class="navul">SIGN UP</li>
+                <li class="navul">زبان تبدیل کریں</li>
+            </ul>
+        </div>
+        <div class="whitediv">
+            <div class="logo"></div>
+            <div class="searchbar">
+                <h4 class="sid">Search in Daraz</h4>
+                <div class="searchicon">
+                    <i class="fa-solid fa-magnifying-glass mgfg"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-cart-shopping cart"></i>
+            <div class="spoffers"></div>
+        </div>
+        <div class="cardslider">
+            <div class="maincardslider">
+                <div class="ads blue">
+                    <div class="filterblock">
+                        <h5 class="menu">Groceries & Pets</h5>
+                        <h5 class="menu">Health & Beauty</h5>
+                        <h5 class="menu">Men's Fashion</h5>
+                        <h5 class="menu">Women's Fashion</h5>
+                        <h5 class="menu">Mother & Baby</h5>
+                        <h5 class="menu">Home & Style</h5>
+                        <h5 class="menu">Electronic Devices</h5>
+                        <h5 class="menu">Electronic Accessories</h5>
+                        <h5 class="menu">Home & TV Appliances</h5>
+                        <h5 class="menu">Sports & OUtdoor</h5>
+                        <h5 class="menu">Watch,Bags & Jewellery</h5>
+                        <h5 class="menu">Automotive & Bikes</h5>
+                    </div>
+                    <div class="adv1"></div>
+
+                </div>
+                <div class="ads orange">
+                    <div class="filterblock">
+                        <h5 class="menu">Groceries & Pets</h5>
+                        <h5 class="menu">Health & Beauty</h5>
+                        <h5 class="menu">Men's Fashion</h5>
+                        <h5 class="menu">Women's Fashion</h5>
+                        <h5 class="menu">Mother & Baby</h5>
+                        <h5 class="menu">Home & Style</h5>
+                        <h5 class="menu">Electronic Devices</h5>
+                        <h5 class="menu">Electronic Accessories</h5>
+                        <h5 class="menu">Home & TV Appliances</h5>
+                        <h5 class="menu">Sports & OUtdoor</h5>
+                        <h5 class="menu">Watch,Bags & Jewellery</h5>
+                        <h5 class="menu">Automotive & Bikes</h5>
+                    </div>
+                    <div class="adv2"></div>
+
+                </div>
+                <div class="ads shockingpink">
+                    <div class="filterblock">
+                        <h5 class="menu">Groceries & Pets</h5>
+                        <h5 class="menu">Health & Beauty</h5>
+                        <h5 class="menu">Men's Fashion</h5>
+                        <h5 class="menu">Women's Fashion</h5>
+                        <h5 class="menu">Mother & Baby</h5>
+                        <h5 class="menu">Home & Style</h5>
+                        <h5 class="menu">Electronic Devices</h5>
+                        <h5 class="menu">Electronic Accessories</h5>
+                        <h5 class="menu">Home & TV Appliances</h5>
+                        <h5 class="menu">Sports & OUtdoor</h5>
+                        <h5 class="menu">Watch,Bags & Jewellery</h5>
+                        <h5 class="menu">Automotive & Bikes</h5>
+                    </div>
+                    <div class="adv3"></div>
+                </div>
+                <div class="ads drkgreen">
+                    <div class="filterblock">
+                        <h5 class="menu">Groceries & Pets</h5>
+                        <h5 class="menu">Health & Beauty</h5>
+                        <h5 class="menu">Men's Fashion</h5>
+                        <h5 class="menu">Women's Fashion</h5>
+                        <h5 class="menu">Mother & Baby</h5>
+                        <h5 class="menu">Home & Style</h5>
+                        <h5 class="menu">Electronic Devices</h5>
+                        <h5 class="menu">Electronic Accessories</h5>
+                        <h5 class="menu">Home & TV Appliances</h5>
+                        <h5 class="menu">Sports & OUtdoor</h5>
+                        <h5 class="menu">Watch,Bags & Jewellery</h5>
+                        <h5 class="menu">Automotive & Bikes</h5>
+                    </div>
+                    <div class="adv4"></div>
+                </div>
+                <div class="ads purple">
+                    <div class="filterblock">
+                        <h5 class="menu">Groceries & Pets</h5>
+                        <h5 class="menu">Health & Beauty</h5>
+                        <h5 class="menu">Men's Fashion</h5>
+                        <h5 class="menu">Women's Fashion</h5>
+                        <h5 class="menu">Mother & Baby</h5>
+                        <h5 class="menu">Home & Style</h5>
+                        <h5 class="menu">Electronic Devices</h5>
+                        <h5 class="menu">Electronic Accessories</h5>
+                        <h5 class="menu">Home & TV Appliances</h5>
+                        <h5 class="menu">Sports & OUtdoor</h5>
+                        <h5 class="menu">Watch,Bags & Jewellery</h5>
+                        <h5 class="menu">Automotive & Bikes</h5>
+                    </div>
+                    <div class="adv5"></div>
+                </div>
+                <div class="ads lightgreen">
+                    <div class="filterblock">
+                        <h5 class="menu">Groceries & Pets</h5>
+                        <h5 class="menu">Health & Beauty</h5>
+                        <h5 class="menu">Men's Fashion</h5>
+                        <h5 class="menu">Women's Fashion</h5>
+                        <h5 class="menu">Mother & Baby</h5>
+                        <h5 class="menu">Home & Style</h5>
+                        <h5 class="menu">Electronic Devices</h5>
+                        <h5 class="menu">Electronic Accessories</h5>
+                        <h5 class="menu">Home & TV Appliances</h5>
+                        <h5 class="menu">Sports & OUtdoor</h5>
+                        <h5 class="menu">Watch,Bags & Jewellery</h5>
+                        <h5 class="menu">Automotive & Bikes</h5>
+                    </div>
+                    <div class="adv6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section2">
+        <div class="parent2">
+            <div class="mainctgry hovergr">
+                <div class="crimg"></div>
+                <h3 class="mart">Mart</h3>
+            </div>
+            <div class="mainctgry hoverylw">
+                <div class="crimg2"></div>
+                <h3 class="mart">Men's Fashion</h3>
+            </div>
+            <div class="mainctgry">
+                <div class="crimg3"></div>
+                <h3 class="mart">Women's Fashion</h3>
+            </div>
+            <div class="mainctgry">
+                <div class="crimg4"></div>
+                <h3 class="mart">Home & Decor</h3>
+            </div>
+            <div class="mainctgry">
+                <div class="crimg5"></div>
+                <h3 class="mart">Beauty</h3>
+            </div>
+            <div class="flashsale">
+                <h2 class="fshdng">Flash Sale</h2>
+                <div class="onsale">
+                    <div class="topbar">
+                        <h4 class="osn">On Sale Now</h4>
+                        <div class="endsale">
+                            <h4 class="ending">Ending in</h4>
+                            <div class="orngbox">09</div>
+                            <h4 class="colons">:</h4>
+                            <div class="orngbox">13</div>
+                            <h4 class="colons">:</h4>
+                            <div class="orngbox">34</div>
+                        </div>
+                        <button class="shop">SHOP MORE</button>
+
+                    </div>
+                    <div class="prolane1">
+                        <div class="saledeals">
+                            <div class="imgp"></div>
+                            <div class="textbox">
+                                <h5 class="desc">i12 (TWS) Ear Buds wireless ear pords ear buds...</h5>
+                                <h2 class="price">Rs.879</h2>
+                                <h6 class="disprice"><span class="dispro">Rs.3000</span> -70%</h6>
+                            </div>
+                        </div>
+                        <div class="saledeals">
+                            <div class="imgp2"></div>
+                            <div class="textbox">
+                                <h5 class="desc">TWS I12 Airpods with Super Sound & High Quali...</h5>
+                                <h2 class="price">Rs.881</h2>
+                                <h6 class="disprice"><span class="dispro">Rs.2400</span> -63%</h6>
+                            </div>
+                        </div>
+                        <div class="saledeals">
+                            <div class="imgp3"></div>
+                            <div class="textbox">
+                                <h5 class="desc">Original P47 Wireless Headphones Wireless Air pods inv...</h5>
+                                <h2 class="price">Rs.759</h2>
+                                <h6 class="disprice"><span class="dispro">Rs.2400</span> -68%</h6>
+                            </div>
+                        </div>
+                        <div class="saledeals">
+                            <div class="imgp4"></div>
+                            <div class="textbox">
+                                <h5 class="desc">Original P47 Wireless Headphones Wireless Air pods inv...</h5>
+                                <h2 class="price">Rs.1090</h2>
+                                <h6 class="disprice"><span class="dispro">Rs.1850</span> -49%</h6>
+                            </div>
+
+                        </div>
+                        <div class="saledeals">
+                            <div class="imgp5"></div>
+                            <div class="textbox">
+                                <h5 class="desc">Original P47 Wireless Headphones Wireless Air pods inv...</h5>
+                                <h2 class="price">Rs.235</h2>
+                                <h6 class="disprice"><span class="dispro">Rs.450</span> -47%</h6>
+                            </div>
+                        </div>
+                        <div class="saledeals">
+                            <div class="imgp6"></div>
+                            <div class="textbox">
+                                <h5 class="desc">Original P47 Wireless Headphones Wireless Air pods inv...</h5>
+                                <h2 class="price">Rs.1460</h2>
+                                <h6 class="disprice"><span class="dispro">Rs.1999</span> -26%</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flashsale2">
+                <h2 class="darazmall">DarazMall</h2>
+                <div class="floor2">
+                    <div class="saledeals2">
+                        <div class="imgdm"></div>
+                        <div class="maindmlogo">
+                            <div class="dmlogo"></div>
+                        </div>
+                        <div class="textbox2">
+                            <h4 class="desc">Sourceco.pk Fresh Islama...</h4>
+                            <h6 class="furdes">Sourceco.pk Fresh Islamabad</h6>
+                        </div>
+                    </div>
+                    <div class="saledeals2">
+                        <div class="imgdm2"></div>
+                        <div class="maindmlogo">
+                            <div class="dmlogo2"></div>
+                        </div>
+                        <div class="textbox2">
+                            <h4 class="desc">Hontinga</h4>
+                            <h6 class="furdes">Hontinga</h6>
+                        </div>
+                    </div>
+                    <div class="saledeals2">
+                        <div class="imgdm3"></div>
+                        <div class="maindmlogo">
+                            <div class="dmlogo3"></div>
+                        </div>
+                        <div class="textbox2">
+                            <h4 class="desc">Sika</h4>
+                            <h6 class="furdes">Sika</h6>
+                        </div>
+                    </div>
+                    <div class="saledeals2">
+                        <div class="imgdm4"></div>
+                        <div class="maindmlogo">
+                            <div class="dmlogo4"></div>
+                        </div>
+                        <div class="textbox2">
+                            <h4 class="desc">Gold Tree Millers</h4>
+                            <h6 class="furdes">Gold Tree Millers</h6>
+                        </div>
+                    </div>
+                    <div class="saledeals2">
+                        <div class="imgdm5"></div>
+                        <div class="maindmlogo">
+                            <div class="dmlogo5"></div>
+                        </div>
+                        <div class="textbox2">
+                            <h4 class="desc">Cool & Cool</h4>
+                            <h6 class="furdes">#Acoolproductyoucantrust</h6>
+                        </div>
+                    </div>
+                    <div class="saledeals2">
+                        <div class="imgdm6"></div>
+                        <div class="maindmlogo">
+                            <div class="dmlogo6"></div>
+                        </div>
+                        <div class="textbox2">
+                            <h4 class="desc">Clopal Electric Store</h4>
+                            <h6 class="furdes">Clopal Electric Store</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categoryfloor">
+                <h2 class="darazmall">Categories</h2>
+                <div class="whitebackground">
+                    <div class="block1 btop bleft">
+                        <div class="ctg">
+                            <div class="airbuds"></div>
+                            <h5 class="earbuds">Wireless Earbuds</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop">
+                        <div class="ctg">
+                            <div class="theater"></div>
+                            <h5 class="earbuds">Home Theater Systems</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop">
+                        <div class="ctg">
+                            <div class="condoms"></div>
+                            <h5 class="earbuds">Condoms</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop">
+                        <div class="ctg">
+                            <div class="eyeshadow"></div>
+                            <h5 class="earbuds">Eye Shadow</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop">
+                        <div class="ctg">
+                            <div class="bag"></div>
+                            <h5 class="earbuds">Cross Body & Should...</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop">
+                        <div class="ctg">
+                            <div class="sandals"></div>
+                            <h5 class="earbuds">Flip Flop slides & s...</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop">
+                        <div class="ctg">
+                            <div class="clothing"></div>
+                            <h5 class="earbuds">Clothing Sets</h5>
+                        </div>
+                    </div>
+                    <div class="block1 btop bright">
+                        <div class="ctg">
+                            <div class="earrings"></div>
+                            <h5 class="earbuds">Drop Earrings</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm bleft">
+                        <div class="ctg">
+                            <div class="bras"></div>
+                            <h5 class="earbuds">Bras</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm">
+                        <div class="ctg">
+                            <div class="brain"></div>
+                            <h5 class="earbuds">Brain Teasers</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm">
+                        <div class="ctg">
+                            <div class="sketch"></div>
+                            <h5 class="earbuds">Drawing & Sketchi...</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm">
+                        <div class="ctg">
+                            <div class="cleaners"></div>
+                            <h5 class="earbuds">Cleaners</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm">
+                        <div class="ctg">
+                            <div class="rings"></div>
+                            <h5 class="earbuds">Rings</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm">
+                        <div class="ctg">
+                            <div class="lighting"></div>
+                            <h5 class="earbuds">Other Lighting P...</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm ">
+                        <div class="ctg">
+                            <div class="bookcases"></div>
+                            <h5 class="earbuds">Bookcases & Shel...</h5>
+                        </div>
+                    </div>
+                    <div class="block1 bbtm bright">
+                        <div class="ctg">
+                            <div class="stickers"></div>
+                            <h5 class="earbuds">Wall Stckers & De...</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foryou">
+                <h2 class="darazmall">Just For You</h2>
+                <div class="foryouprod">
+                    <div class="shopprod">
+                        <div class="productimage"></div>
+                        <div class="textdiv">
+                            <h4 class="desc"> Oasis Fashion Stylish Synthetic Leather Drivi...</h4>
+                            <h2 class="price">Rs.870</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1499</span> -49%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage2"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Heart Wooden Clock With Premium Light I Th...</h4>
+                            <h2 class="price">Rs.299</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1000</span> -70%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage3"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">6 Speed Metal Gear Box Style Car Key Chain gear...</h4>
+                            <h2 class="price">Rs.206</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.750</span> -73%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star greystar"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage4"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Hot Best Selling Mini Small Leather Wallet an...</h4>
+                            <h2 class="price">Rs.110</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.150</span> -57%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage5"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">12 Pcs - Nails Nails Set - Branded Nails Nail Ar...</h4>
+                            <h2 class="price">Rs.170</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.460</span> -60%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star greystar"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage6"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Hot Selling LCD Writing Tablet for Kids, 8.5 inch...</h4>
+                            <h2 class="price">Rs.585</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1200</span> -51%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage7"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Enacolor Long Earrings Female Tassel Rhines...</h4>
+                            <h2 class="price">Rs.323</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.680</span> -53%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage8"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Nude Mini Pink Matte Lipsticks Set all Different...</h4>
+                            <h2 class="price">Rs.649</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.900</span> -28%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star greystar"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage9"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Fashionable 3 Chrono Stain Less Steel Analo...</h4>
+                            <h2 class="price">Rs.624</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.760</span> -17%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage10"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Golden Border acrylic, Acrylic Geometric Greek...</h4>
+                            <h2 class="price">Rs.199</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.349</span> -43%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage11"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Heavy Silver Magnetic Broken Heart Necklace...</h4>
+                            <h2 class="price">Rs.258</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.550</span> -53%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage12"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Magic Ice Cube Maker Genie Silicone Rubber...</h4>
+                            <h2 class="price">Rs.740</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.850</span> -13%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage13"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Sleepers, Flip Flop, new fashion design comfo...</h4>
+                            <h2 class="price">Rs.335</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.499</span> -32%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage14"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">BeddingOrzo toothpaste dispenser toothpaste...</h4>
+                            <h2 class="price">Rs.460</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1200</span> -63%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage15"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Combo Of Black Titanium Finger Ring With C...</h4>
+                            <h2 class="price">Rs.155</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.400</span> -61%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage16"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Mehndi Injection Pen with 1 Extra Needle,...</h4>
+                            <h2 class="price">Rs.171</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.230</span> -26%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage17"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">waterproof mattress cover king size -doub...</h4>
+                            <h2 class="price">Rs.759</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1500</span> -49%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage18"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Pack of 5- Magic Hook Without Nails Tran...</h4>
+                            <h2 class="price">Rs.98</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.500</span> -80%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage19"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Magic hangers - wardrobe organizer 9...</h4>
+                            <h2 class="price">Rs.78</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.250</span> -69%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage20"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">15 pcs/set Silver Ring set women Wedding...</h4>
+                            <h2 class="price">Rs.322</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.699</span> -54%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage21"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Amazing Spiderman 2019 Avengers End Game...</h4>
+                            <h2 class="price">Rs.515</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1000</span> -49%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage22"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">The Dark night Batman Printed Cotton Jersey...</h4>
+                            <h2 class="price">Rs.399</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1999</span> -80%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage23"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Best One Deal of 2 Black and Golden Never fade...</h4>
+                            <h2 class="price">Rs.115</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.250</span> -54%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <div class="shopprod">
+                        <div class="productimage24"></div>
+                        <div class="textdiv">
+                            <h4 class="desc">Best Of One Long Lasting Fragrance: Everyone...</h4>
+                            <h2 class="price">Rs.449</h2>
+                            <h6 class="disprice"><span class="dispro">Rs.1200</span> -63%</h6>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
+                    </div>
+                    <button class="loadmore">LOAD MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customcare">
+        <div class="leftlane">
+            <div class="csare">
+                <h3 class="helpcenter">Customer Care</h3>
+                <h5 class="helpcenter marg">Help Center</h5>
+                <h5 class="helpcenter">How to Buy</h5>
+                <h5 class="helpcenter">Corperate & Bulk Purchasing</h5>
+                <h5 class="helpcenter">Returns & Refunds</h5>
+                <h5 class="helpcenter">Daraz Shop</h5>
+                <h5 class="helpcenter">Contact us</h5>
+                <h5 class="helpcenter">Purchase Protection</h5>
+                <h5 class="helpcenter">Daraz Pick Up Points</h5>
+            </div>
+            <div class="makemoney">
+                <h3 class="helpcenter">Make Money With Us</h3>
+                <h5 class="helpcenter marg">Daraz University</h5>
+                <h5 class="helpcenter">Sell On Daraz</h5>
+            </div>
+            <div class="daraz">
+                <h3 class="helpcenter">Daraz</h3>
+                <h5 class="helpcenter marg">About Us</h5>
+                <h5 class="helpcenter">Digital Payments</h5>
+                <h5 class="helpcenter">Daraz Donates</h5>
+                <h5 class="helpcenter">Daraz Blogs</h5>
+                <h5 class="helpcenter">Terms & Conditions</h5>
+                <h5 class="helpcenter">Privacy Policy</h5>
+                <h5 class="helpcenter">Online shopping app</h5>
+                <h5 class="helpcenter">Online Grocery Shopping</h5>
+                <h5 class="helpcenter">Daraz Exclusive</h5>
+                <h5 class="helpcenter">How to shop on Daraz</h5>
+
+            </div>
+        </div>
+        <div class="rightlane">
+            <div class="scanners">
+                <div class="topscan">
+                    <div class="scanimg"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
